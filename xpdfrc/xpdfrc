@@ -1,0 +1,9 @@
+#----- Example to use special charset to read PDF documents -----#
+#----- Greek support package
+# nameToUnicode	/Users/isapp/Sites/personal/github/ifile/Adapter/Helpers/binaries/xpdf-greek/Greek.nameToUnicode
+# unicodeMap	ISO-8859-7	/Users/isapp/Sites/personal/github/ifile/Adapter/Helpers/binaries/xpdf-greek/ISO-8859-7.unicodeMap
+#----- Greek support package
+
+#------ UTF-8 Encoding
+textEncoding UTF-8
+#------ UTF-8 Encoding
