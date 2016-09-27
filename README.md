@@ -40,14 +40,14 @@ IFile integrate version of ANTIWORD only:
 
 If you use an different OS, you must for now (we hope to integrate the configuration of the absolute path of executable files, in the next release of IFile) copy the executable file compiled on your server, in the correct folder in binaries files.
 
-### Download Binaries files
+### How Download and use Binaries files in IFile
 If you want use third-part component XPDF or ANTIWORD you need:
 
  - Download the binaries files from [here](https://github.com/isappit/ifile-binaries/archive/master.zip)
  - Unzip the package on your server
  - Copy the _"ifile-binaries"_ folder in _"vendor/isappit/ifile/src/Adapter/Helpers/"_ or configure IFile to read the "ifile-binaries" folder from external path at IFile. [More detail](https://github.com/isappit/ifile/blob/master/src/Config/xml/README.md) 
 
- Example Configure external path:
+ Example how configure external path:
 ```xml
  <binaries>/usr/local/var/ifile/ifile-binaries</binaries>
 ```
