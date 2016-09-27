@@ -9,7 +9,7 @@
 Please see [CHANGELOG.md](CHANGELOG.md).
 
 ### What is IFile Binaries?
-IFile Binaries is an repository of third-parts bionaries files used from IFile to retrieve the content of many type of files.
+IFile Binaries is an repository of third-parts binaries files used from IFile to retrieve the content of many type of files.
 
 ### Third-parts
 IFile for now uses two third-parts binaries files:
@@ -36,19 +36,18 @@ IFile integrate version of ANTIWORD only:
 - Linux 32bit
 - Windows 32bit
 
-If you use an different OS, you need (for now, we hope to integrate the configuration of the absolute path of executable files, in the next release of IFile) copy the executable file in the correct folder in binaries files.
+*IMPORTANT:*
 
-### Installation
+If you use an different OS, you must for now (we hope to integrate the configuration of the absolute path of executable files, in the next release of IFile) copy the executable file compiled on your server, in the correct folder in binaries files.
 
-
-## Download Binaries files
-If you want indexing PDF files you need:
+### Download Binaries files
+If you want use third-part component XPDF or ANTIWORD you need:
 
  - Download the binaries files from [here](https://github.com/isappit/ifile-binaries/archive/master.zip)
  - Unzip the package on your server
- - Configure the "ifile-binaries" folder [more detail](https://github.com/isappit/ifile/blob/master/src/Config/xml/README.md) 
+ - Copy the _"ifile-binaries"_ folder in _"vendor/isappit/ifile/src/Adapter/Helpers/"_ or configure IFile to read the "ifile-binaries" folder from external path at IFile. [More detail](https://github.com/isappit/ifile/blob/master/src/Config/xml/README.md) 
 
- Example:
+ Example Configure external path:
 ```xml
  <binaries>/usr/local/var/ifile/ifile-binaries</binaries>
 ```
