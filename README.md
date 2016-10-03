@@ -41,16 +41,36 @@ IFile integrate version of ANTIWORD only:
 If you use an different OS, you must for now (we hope to integrate the configuration of the absolute path of executable files, in the next release of IFile) copy the executable file compiled on your server, in the correct folder in binaries files.
 
 ### How Download and use Binaries files in IFile
-If you want use third-part component XPDF or ANTIWORD you need:
+If you want use third-part component XPDF or ANTIWORD you can use two method:
 
- - Download the binaries files from [here](https://github.com/isappit/ifile-binaries/archive/master.zip)
+#### Zip Archive
+ - Download ZIP Archive Binaries Files from [here](https://github.com/isappit/ifile-binaries/archive/master.zip)
  - Unzip the package on your server
- - Copy the _"ifile-binaries"_ folder in _"vendor/isappit/ifile/src/Adapter/Helpers/"_ or configure IFile to read the "ifile-binaries" folder from external path at IFile. [More detail](https://github.com/isappit/ifile/blob/master/src/Config/xml/README.md) 
+ - Copy the _"ifile-binaries"_ folder in _"vendor/isappit/ifile/src/Adapter/Helpers/"_ or configure IFile to read 
+ the "ifile-binaries" folder from external path at IFile. [More detail](https://github.com/isappit/ifile/blob/master/src/Config/xml/README.md#binaries) 
 
  Example how configure external path:
 ```xml
  <binaries>/usr/local/var/ifile/ifile-binaries</binaries>
 ```
+
+#### Clone project from git
+ - Clone project 
+ - Copy the _"ifile-binaries"_ folder in _"vendor/isappit/ifile/src/Adapter/Helpers/"_ or configure IFile to read 
+ the "ifile-binaries" folder from external path at IFile. [More detail](https://github.com/isappit/ifile/blob/master/src/Config/xml/README.md#binaries)
+
+Example clone project:
+```bash
+git clone https://github.com/isappit/ifile-binaries.git
+```
+
+#### Install and configure third-part component
+If you don't want download and install "ifile-binaries" folder and you want use XPDF or ANTIWORD installed on your server,
+you can configure the third-parts executable files in configuration.
+
+For more detail how configure third-parts components in IFile see:
+ - [XPDF](https://github.com/isappit/ifile/tree/master/src/Config/xml#xpdf)
+ - [ANTIWORD](https://github.com/isappit/ifile/tree/master/src/Config/xml#doctotxt)
 
 ### LICENSE
 
